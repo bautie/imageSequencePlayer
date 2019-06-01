@@ -1,0 +1,53 @@
+<html>
+<head>
+	<script src="stuff/imgSeqPlayer.js"></script>
+	<link rel="stylesheet" type="text/css" href="stuff/cmn.css">
+	<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap" rel="stylesheet">
+</head>
+<body onload="ToolsInitialize()" onunload="ToolsExit()">
+<div class="round" style="text-align: center;">
+	<img src="stuff/blank.png" id="DST_FRAME" width="960" height="540">
+
+</div>
+
+<div class='round' style='text-align: center;'>
+	<i class="fas fa-file-image"></i> 画像ファイルパス <span class="info" ID="FILE_NAME" style="font-weight: bold;">-</span> <span id="STATUS"></span><br>
+	<i class="fas fa-gamepad"></i> 
+	<button name="button" ID="PLAY_TOP"><i class="fas fa-fast-backward"></i> 先頭</button>
+	<button name="button" ID="REW_PLAY_START"><i class="fas fa-backward"></i> 逆再生</button>
+	<button name="button" ID="PLAY_START"><i class="fas fa-play"></i> 再生</button>
+	<button name="button" ID="PLAY_STOP"><i class="fas fa-pause"></i> 停止</button> / 
+	<i class="fas fa-tachometer-alt"></i> 再生速度<input type="text" id="FPS" size='3' value='30'>fps / 
+	<i class="fas fa-calculator"></i> 表示フレーム番号<input type="text" id="CUR_FRAME" size='8' value='1'><br>
+
+	<span class="info"> <i class="fas fa-mouse-pointer"></i> マウスカーソルを画像に重ねて <i class="fas fa-sync-alt"></i>ホイール操作でフレーム移動 [ Shift x10 / Ctrl x100 / Shift+Ctrl x1000 ]  
+	</span>
+</div>
+
+<div class='round'>
+
+	<div><span class="cfg_name"><i class="far fa-folder"></i> 画像フォルダパス :</span> <input type="text" id="DIR_PATH" size="50" value="/merge/"></div>
+	<div><span class="cfg_name"><i class="fas fa-file-image"></i> 画像ファイル名 :</span> <input type="text" id="IMG_HEAD" size='16' value='vA' style="text-align:right;">+フレーム番号+<input type="text" id="IMG_TAIL" size='16' value='.jpg'>
+	</div>
+	<div><span class="cfg_name"><i class="fas fa-calculator"></i> フレーム番号 :</span> 開始<input type="text" id="START_FRAME" size='8' value='1'>～終了<input type="text" id="END_FRAME" size='8' value='10000'>, 桁数 <input type="text" id="NUM_LENGTH" size='3' value='5'>
+	</div>
+
+</div>
+
+<div class="round" style="font-size: 90%;line-height: 1.3em;">
+【使い方】<br>
+ ・画像フォルダパス : Explorerからコピーしてきてペースト。<br>
+ ・画像ファイル名 : ファイル名の数字の前後の文字を入力。<br>
+ ・フレーム番号 : ファイル名の数字の部分の開始番号と終了番号を入力。<br>
+ ・再生速度 : 秒間の表示フレーム数(停止して再生したときに反映)。<br>
+ ・表示フレーム番号 : 現在表示中のフレーム番号。入力+エンターで変更可能。<br>
+ ・桁数 : フレーム番号を "00100" のように桁数を固定する場合は、桁数を入力。固定しない場合は0。<br>
+ ・画像を再生成したらリロードしてください。<br>
+【制限】<br>
+ ・推奨 : Google Chrome (他での動作確認はしていません)<br>
+ ・映像表示部分は960x540に固定しています。
+</div>
+
+</body>
+</html>
