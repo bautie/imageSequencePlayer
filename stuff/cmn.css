@@ -1,0 +1,82 @@
+html {
+	box-sizing: content-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background: #222;
+	font-size: 11pt;
+	font-family: 'Kosugi Maru', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+	line-height: 1.6em;
+	padding: 0px;
+	margin: 0px;
+}
+
+img#DST_FRAME {
+	box-sizing: border-box;
+	width: 960px;
+	height: 540px;
+	border: 1px solid black;
+}
+
+input {
+	box-sizing: border-box;
+	margin: 4px;
+	padding: 4px;
+
+	font-family: inherit;
+	font-size: 90％;
+	border: 0px solid #444;
+	border-radius: 0px;
+	background : #aaa;
+}
+
+input:focus {
+	background : #99a;
+}
+
+button {
+	font-family: inherit;
+	border-radius: 3px;
+	background : #aaa;
+	border: 0px solid #444;
+	font-size: 90％;
+	padding: 4px;
+}
+
+button:focus {
+	background : #88d;
+}
+.round {
+	box-sizing: border-box;
+	padding: 4px;
+	margin: 0px;
+
+	width: 100%;
+	border-radius: 0px;
+	border-bottom: 1px solid #444;
+	background : #666;
+}
+
+.round2 {
+	background : #444;
+}
+
+.cfg_name {
+	width: 180px;
+	display: inline-block;
+	text-align: right;
+}
+
+.info {
+	border-radius: 8px;
+	border: 0px solid #444;
+	background : #888;
+	padding: 4px 8px;
+}
+
+#STATUS {
+	color: #533;
+	font-weight: bold;
+}
